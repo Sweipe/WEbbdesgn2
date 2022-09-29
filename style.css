@@ -2,8 +2,15 @@
 	font-family: Bread; 
 	src:url('bread/Bread.otf')
 }
-html, body{
+
+html,body {
 	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	background-image: url('brufus.png');
+	background-size: cover;
 }
 
 nav {
@@ -11,9 +18,12 @@ nav {
 }
 
 nav img {
+	position: absolute;
+	left: 0;
 	margin-left: calc(50% - 200px);
-	margin-top: 200px;
+	align-content: center;
 	width: 400px;
+	z-index: -1;
 }
 nav span {
 	position: absolute;
@@ -21,45 +31,37 @@ nav span {
 	width: 100%;
 	font-family: Bread;
 	font-size: 50px;
-	/*margin-top: 253px;*/
+	top: -20px;
 	left: 0;
-	/*padding-bottom: 100px;*/
 }
 nav a {
 	display: block;
-	/*margin-bottom: 68px;*/
+	margin-bottom: 60px;
+	position: relative;
 }
-#orderbutton{
-	background-image: url("/banner_top.png");
-	background-size: cover;
-	width: 570px;
-	height: 160;
-}
-#alter2button{
-	background-image: url("/banner_mtop.png");
-	background-size: cover;
-}
-#somethingbutton{
-	background-image: url("/banner_mbottom.png");
-	background-size: cover;
-}
-#aboutusbutton{
-	background-image: url("/banner_bottom.png");
-	background-size: cover;
+
+nav p {
+	position: relative;
+	top: 20px;
 }
 
 footer {
     background-color: #242424;
     text-align: center; 
     color: white; 
-    padding: 5vh; 
+    padding: 2vh; 
     font-size: 0,2em;
 
     position: fixed;
     bottom: 0;
     width: 100%;
+	height: 50px;
 
     /*background-image: url(img.png);*/
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(img.png);
-    background-size: 10% 100%;
+    background-size: 20%;
+}
+
+footer p {
+	top: 0;
 }
