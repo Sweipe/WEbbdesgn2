@@ -2,6 +2,9 @@
 	font-family: Bread; 
 	src:url('bread/Bread.otf')
 }
+html, body{
+	margin: 0;
+}
 
 nav {
 	z-index: 1;
@@ -18,13 +21,31 @@ nav span {
 	width: 100%;
 	font-family: Bread;
 	font-size: 50px;
-	margin-top: 253px;
+	/*margin-top: 253px;*/
 	left: 0;
-	padding-bottom: 100px;
+	/*padding-bottom: 100px;*/
 }
 nav a {
 	display: block;
-	margin-bottom: 68px;
+	/*margin-bottom: 68px;*/
+}
+#orderbutton{
+	background-image: url("/banner_top.png");
+	background-size: cover;
+	width: 570px;
+	height: 160;
+}
+#alter2button{
+	background-image: url("/banner_mtop.png");
+	background-size: cover;
+}
+#somethingbutton{
+	background-image: url("/banner_mbottom.png");
+	background-size: cover;
+}
+#aboutusbutton{
+	background-image: url("/banner_bottom.png");
+	background-size: cover;
 }
 
 footer {
